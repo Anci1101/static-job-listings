@@ -31,8 +31,8 @@ Users should be able to:
 
 ### screenshots
 
-![](./screenshots/Sreenshot-mobile.png)
-![](./screenshots/Sreenshot-desktop.png)
+![](./screenshots/Screenshot-mobile.png)
+![](./screenshots/Screenshot-desktop.png)
 
 ### Built with
 
