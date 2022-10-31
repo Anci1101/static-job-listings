@@ -10,13 +10,22 @@ const Company = ({id,
                   role,
                   level,
                   languages,
-                  tools}) => {
+                  tools,
+                  newTag,
+                  featuredTag}) => {
   return (
     <div className='company-wrapper' key={id}>
-        <div className='company-card'>
+        <div className={featuredTag ? 'company-card-border' : 'company-card'}>
         <div className="logo"><img src={logo} alt={logo} /></div>
         <div className='job'>
-        <div className="company">{companyName}</div>
+          <div className='company-tag-wrapper'>
+            <div className="company">{companyName}</div>
+            <div className='tagWrapper'>
+              {newTag && (<div className='newTag'>NEW!</div>)}
+              {featuredTag && (<div className='featuredTag'>FEATURED</div>)}
+            </div>
+          </div>
+       
             <div className="position">{position}</div>
                 <div className="job-info">
                 <p className='postedAt'>{postedAt}</p>

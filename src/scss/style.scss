@@ -90,13 +90,11 @@ $desktop: 1440px;
 
 .single-filter-wrapper {
     display: flex;
-    // padding: 10px;
     background-color: $light-grayish-cayn-filt-tab;
     color: $desaturated-dark-cayn;
     font-family: $font-stack;
     font-weight: weight(bold);
     align-items: center;
-    // padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     
@@ -108,9 +106,6 @@ $desktop: 1440px;
 
 .filter-btn {
     background-color: $desaturated-dark-cayn;
-    // background-image: url('../images/icon-remove.svg');
-    // background-repeat: no-repeat;
-    // width: 30px;
     padding: 7px;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -134,16 +129,35 @@ $desktop: 1440px;
 }
 
 .company-wrapper {
-    // background-color: $light-grayish-cayn-background;
     display: flex;
     justify-content: center;
-    // @include respond(large){
-    //     margin: 20px 40px 10px 40px
-    // }
-
 }
 
 .company-card {
+    width: 100%;
+    height: 300px;
+    // border-left: 5px solid $desaturated-dark-cayn;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 40px 20px 10px;
+    font-family: $font-stack;
+    position: relative;
+    padding: 30px;
+    box-shadow: 0px 10px 20px -15px $dark-grayish-cayn;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include respond(large){
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        margin: 10px 70px 1px 70px
+    }
+}
+
+.company-card-border {
     width: 100%;
     height: 300px;
     border-left: 5px solid $desaturated-dark-cayn;
@@ -165,10 +179,6 @@ $desktop: 1440px;
         height: auto;
         margin: 10px 70px 1px 70px
     }
-}
-
-.logo {
-    // margin: 15px;
 }
 
 .logo img{
@@ -198,6 +208,33 @@ $desktop: 1440px;
 
 }
 
+.company-tag-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tagWrapper {
+    display: flex;
+    margin-left: 15px;
+    gap: 5px;
+}
+
+.newTag {
+    background-color: $desaturated-dark-cayn;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: $font-size;
+}
+
+.featuredTag {
+    background-color: $very-dark-grayish-cayn;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: $font-size;
+}
+
 .position {
     color: $very-dark-grayish-cayn;
     font-weight: weight('bold');
@@ -214,18 +251,6 @@ $desktop: 1440px;
     color: $dark-grayish-cayn;
     font-weight: weight('regular');
 }
-
-// .postedAt {
-
-// }
-
-// .contract {
-
-// }
-
-// .location {
-
-// }
 
 .qualifications{
     display: flex;
@@ -244,8 +269,6 @@ $desktop: 1440px;
     padding: 10px;
     background-color: $light-grayish-cayn-filt-tab;
     border-radius: 5px;
-
-
 }
 
 .role:active{

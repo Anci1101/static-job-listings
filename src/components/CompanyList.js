@@ -18,6 +18,8 @@ const CompanyList = ({companies}) => {
                  level={company.level}
                  languages={company.languages}
                  tools={company.tools}
+                 newTag={company.new}
+                 featuredTag={company.featured}
           />
      
       ))}
